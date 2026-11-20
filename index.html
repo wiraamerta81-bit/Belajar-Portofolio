@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nanda Wiratama, S.H. - Portofolio</title>
+<meta name="description" content="Portofolio Nanda Wiratama, S.H.: marketing properti, business operations, dan general affairs. Bandung, Jawa Barat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070d1f;--surface:#0f1830;--ink:#eaf0ff;--muted:#9fb0d4;--line:#1f2d52;--a:#3d5afe;--a-dk:#3d5afe;--panel:#0b1a45;--m:#2ee6b8;--accent:var(--a);--on:#fff;
+color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-palette="hijau"]{--a:#3fcf9b;--panel:#0b2a22;--m:#9af0cc;--on:#07140f}
+:root[data-palette="marun"]{--a:#ff6b86;--panel:#2e0f1b;--m:#ffb3c1;--on:#1a0710}
+:root[data-palette="emas"]{--a:#f2b84b;--panel:#241d0c;--m:#ffe0a0;--on:#1a1405}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark}}
+:root[data-theme="dark"]{color-scheme:dark}
+html{scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;font-size:18px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+h1,h2,h3{font-family:"Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.15;margin:0}
+h1{font-size:clamp(2.4rem,7vw,4.4rem);font-weight:700;letter-spacing:-.03em}
+h2{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:700;margin-bottom:12px}
+h3{font-size:1.25rem;font-weight:700;margin-bottom:4px}
+p{margin:0 0 14px;max-width:64ch}
+.muted{color:var(--muted)}
+.sub{color:var(--muted);margin-bottom:32px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{max-width:1080px;margin:auto;padding:12px 24px;display:flex;gap:18px;align-items:center;overflow-x:auto}
+nav .brand{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:700;margin-right:auto;white-space:nowrap;text-decoration:none}
+nav a{text-decoration:none;color:var(--muted);font-size:15px;white-space:nowrap}
+nav a:hover{color:var(--ink)}
+.sw{display:flex;gap:6px;margin-left:8px}
+.sw button{width:20px;height:20px;border-radius:50%;border:2px solid var(--surface);box-shadow:0 0 0 1px var(--line);cursor:pointer;padding:0}
+main{max-width:1080px;margin:auto;padding:0 24px}
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+.hero{padding:64px 0;display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.hello{color:var(--accent);font-weight:700;margin-bottom:8px}
+.role{font-size:1.2rem;font-weight:600;margin:14px 0 8px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-flex;gap:8px;align-items:center;padding:11px 20px;border-radius:8px;background:var(--accent);color:var(--on);text-decoration:none;font-weight:700;border:1px solid var(--accent);font-size:16px;cursor:pointer;font-family:inherit}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.alt:hover{border-color:var(--accent)}
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;margin-top:36px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.stats div{padding:16px 20px;border-right:1px solid var(--line)}
+.stats div:last-child{border:0}
+.stats dt{font-size:14px;color:var(--muted)}
+.stats dd{margin:2px 0 0;font-weight:700;font-size:1.15rem}
+.ph{background:var(--surface);border:2px dashed var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;color:var(--muted);font-size:14px;aspect-ratio:4/3;overflow:hidden}
+.ph::before{content:"Tempat foto: " attr(data-label)}
+.ph.has{border:0;padding:0}.ph.has::before{content:none}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph.portrait{aspect-ratio:4/5}
+mark{background:color-mix(in srgb,var(--accent) 18%,transparent);color:inherit;padding:0 4px;border-radius:3px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card ul{margin:10px 0 0;padding-left:20px;color:var(--muted)}
+.card li{margin-bottom:4px}
+.card .ph{margin-bottom:16px}
+.card a.lnk{display:inline-block;margin-top:10px;font-weight:700;color:var(--accent)}
+.skills ul{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.skills li{border:1px solid var(--line);border-radius:6px;padding:3px 12px;font-size:15px;background:var(--bg)}
+.panel{background:var(--panel);color:#e8ecf5;border-radius:14px;padding:32px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+.panel .big{font-family:"Space Grotesk",system-ui,sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:700;line-height:1;color:#3de8c0}
+.panel p{margin:0;color:#c3cde2}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
+.tl li{position:relative;padding:0 0 28px 14px}
+.tl li::before{content:"";position:absolute;left:-29px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--m)}
+form{display:grid;gap:14px;max-width:560px;margin-top:28px}
+label{font-weight:600;font-size:15px;display:grid;gap:6px}
+input,textarea{font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);width:100%}
+textarea{min-height:130px;resize:vertical}
+#note{color:var(--muted);font-size:15px;margin:0}
+footer{max-width:1080px;margin:auto;padding:32px 24px 56px;color:var(--muted);font-size:14px}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}
+.uni{display:flex;gap:10px;align-items:center}
+:root[data-theme="light"]{--bg:#f2f5fb;--surface:#fff;--ink:#0b1226;--muted:#55607a;--line:#d6dcea;--m:#0a9b7c;color-scheme:light}
+body{background-image:radial-gradient(55% 38% at 88% 0%,rgba(61,90,254,.38),transparent 70%),radial-gradient(40% 28% at 0% 18%,rgba(46,230,184,.15),transparent 70%);background-repeat:no-repeat}
+.hello,.card a.lnk,.stats dd{color:var(--m)}
+.panel{border:1px solid #2a3f8a}
+.ph.logo{width:44px;height:44px;aspect-ratio:1;padding:2px;font-size:10px;border-radius:6px;flex:none}
+.ph.logo::before{content:"Logo"}
+.ph.logo img{object-fit:contain}
+.ph.cert{aspect-ratio:3/2}
+.ph.cert img{object-fit:contain;cursor:zoom-in;background:var(--bg)}
+#lb{position:fixed;inset:0;z-index:50;background:rgba(5,10,25,.88);display:flex;align-items:center;justify-content:center;padding:20px;cursor:zoom-out}
+#lb[hidden]{display:none}
+#lb img{max-width:94vw;max-height:90vh;border-radius:6px}
+@media (max-width:780px){.hero{grid-template-columns:1fr;padding-top:36px}.hero .ph.portrait{max-width:300px;order:-1}.about{grid-template-columns:1fr}.about .ph{max-width:360px}.panel{grid-template-columns:1fr}.stats div{border-right:0;border-bottom:1px solid var(--line)}.stats div:last-child{border:0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/><path d="M9 9.5c.5 2 2.5 4 5 5l1.2-1.2-1.8-1-.8.7c-.8-.4-1.6-1.2-2-2l.7-.8-1-1.8z"/></symbol>
+<symbol id="i-in" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+<symbol id="i-ig" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+</svg>
+<header><nav aria-label="Navigasi utama">
+<a class="brand" href="#beranda">Nanda Wiratama, S.H.</a>
+<a href="#proyek">Proyek</a><a href="#pendidikan">Pendidikan</a><a href="#pengalaman">Pengalaman</a><a href="#sertifikasi">Sertifikasi</a><a href="#kontak">Kontak</a>
+<span class="sw" role="group" aria-label="Pilih warna">
+<button style="background:#2f4bff" data-p="biru" aria-label="Elektrik"></button><button style="background:#1f7a5a" data-p="hijau" aria-label="Hijau"></button><button style="background:#9b2c3d" data-p="marun" aria-label="Marun"></button><button style="background:#9a6a12" data-p="emas" aria-label="Emas"></button>
+</span>
+</nav></header>
+<main>
+<section id="beranda" class="hero">
+<div>
+<p class="hello">Halo semua, panggil saja saya Wira</p>
+<h1>Nanda Wiratama, S.H.</h1>
+<p class="role">Marketing | Business Operations | General Affairs</p>
+<p class="muted">Lulusan S1 Ilmu Hukum dengan pengalaman di pemasaran properti, manajemen kost, dan general affairs di perusahaan konstruksi dan properti. Berbasis di Bandung.</p>
+<div class="btns">
+<a class="btn" href="https://wa.me/6287890266688" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg>WhatsApp</a>
+<a class="btn alt" href="https://www.linkedin.com/in/nandawira" target="_blank" rel="noopener"><svg class="ic"><use href="#i-in"/></svg>LinkedIn</a>
+<a class="btn alt" href="https://instagram.com/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-ig"/></svg>Instagram</a>
+<a class="btn alt" href="#kontak"><svg class="ic"><use href="#i-mail"/></svg>Kirim masukan</a>
+</div>
+<dl class="stats">
+<div><dt>Kontribusi nilai transaksi</dt><dd>Rp11,44 miliar</dd></div>
+<div><dt>Pengalaman kerja</dt><dd><mark>isi</mark> tahun</dd></div>
+<div><dt>Status</dt><dd>Terbuka untuk peluang baru</dd></div>
+</dl>
+</div>
+<div class="ph portrait" data-label="Foto formal" data-src=""></div>
+</section>
+
+<section id="tentang" class="about">
+<div class="ph" data-label="Foto santai saat bekerja" data-src=""></div>
+<div>
+<h2>Profil singkat</h2>
+<p>Saya berlatar belakang Ilmu Hukum dan terbiasa bekerja lintas fungsi: memasarkan properti, mengelola operasional, dan merapikan administrasi bisnis.</p>
+<p>Saya tertarik pada pengembangan bisnis, analisis data, dan sistem kerja yang terstruktur. Saya bekerja berbasis data, berkoordinasi lintas divisi, dan menyelesaikan masalah secara sistematis.</p>
+</div>
+</section>
+
+<section id="keahlian" class="skills">
+<h2>Spesialisasi</h2>
+<p class="sub">Empat bidang yang saya kerjakan sehari-hari.</p>
+<div class="cols">
+<div class="card"><h3>Marketing &amp; Business Development</h3><ul style="padding:0"><li>Property Marketing</li><li>Digital Marketing</li><li>Lead Generation</li><li>Sales Performance Analysis</li><li>Business Development</li><li>Marketing Strategy</li></ul></div>
+<div class="card"><h3>Business Operations &amp; General Affairs</h3><ul style="padding:0"><li>Operational Management</li><li>General Affairs Administration</li><li>Procurement &amp; Purchasing Administration</li><li>Inventory and Material Monitoring</li><li>Vendor Coordination</li><li>Document Management</li></ul></div>
+<div class="card"><h3>Legal &amp; Administration</h3><ul style="padding:0"><li>Legal Administration</li><li>Document Review</li><li>Contract Administration</li><li>Business Documentation</li></ul></div>
+<div class="card"><h3>Data &amp; Digital Tools</h3><ul style="padding:0"><li>Google Sheets</li><li>Google Workspace</li><li>Data Analysis</li><li>KPI Monitoring</li><li>Dashboard Development</li><li>Microsoft Office</li></ul></div>
+</div>
+</section>
+
+<section id="proyek">
+<h2>Proyek pilihan</h2>
+<p class="sub">Tangkapan layar menggunakan data samaran. Spreadsheet asli tidak dibagikan secara terbuka, jadi hubungi saya lewat WhatsApp untuk meminta akses demo.</p>
+<div class="cols">
+<article class="card"><div class="ph" data-label="Marketing Performance" data-src=""></div><h3>Marketing Performance &amp; Business Contribution</h3><ul><li>Mengelola aktivitas pemasaran properti.</li><li>Memantau leads, survei, dan performa penjualan.</li><li>Berkontribusi pada nilai transaksi Rp11,44 miliar.</li></ul><a class="lnk" href="https://wa.me/6287890266688?text=Halo%20Wira%2C%20saya%20ingin%20meminta%20akses%20demo%20proyek%20%22Marketing%20Performance%20%26%20Business%20Contribution%22" target="_blank" rel="noopener">Minta akses demo</a></article>
+<article class="card"><div class="ph" data-label="Marketing Performance Dashboard" data-src=""></div><h3>Marketing Performance Dashboard</h3><ul><li>Merancang sistem monitoring aktivitas marketing.</li><li>Merekap performa harian, mingguan, dan bulanan.</li><li>Mengembangkan indikator KPI dan evaluasi performa.</li></ul><a class="lnk" href="https://wa.me/6287890266688?text=Halo%20Wira%2C%20saya%20ingin%20meminta%20akses%20demo%20proyek%20%22Marketing%20Performance%20Dashboard%22" target="_blank" rel="noopener">Minta akses demo</a></article>
+<article class="card"><div class="ph" data-label="Sistem General Affairs &amp; Procurement" data-src=""></div><h3>General Affairs &amp; Procurement Management System</h3><ul><li>Mengembangkan pencatatan material dan purchasing dengan Google Sheets.</li><li>Memantau estimasi biaya, realisasi, dan selisih anggaran.</li><li>Mendokumentasikan administrasi dan kebutuhan operasional proyek.</li></ul><a class="lnk" href="https://wa.me/6287890266688?text=Halo%20Wira%2C%20saya%20ingin%20meminta%20akses%20demo%20proyek%20%22General%20Affairs%20%26%20Procurement%20Management%20System%22" target="_blank" rel="noopener">Minta akses demo</a></article>
+<article class="card"><div class="ph" data-label="Kerangka KPI" data-src=""></div><h3>Operational &amp; KPI Monitoring Framework</h3><ul><li>Merancang kerangka evaluasi performa lintas divisi.</li><li>Menyusun indikator kinerja marketing, manajemen kost, dan media sosial.</li><li>Mengembangkan sistem pelaporan dan monitoring manajemen.</li></ul><a class="lnk" href="https://wa.me/6287890266688?text=Halo%20Wira%2C%20saya%20ingin%20meminta%20akses%20demo%20proyek%20%22Operational%20%26%20KPI%20Monitoring%20Framework%22" target="_blank" rel="noopener">Minta akses demo</a></article>
+</div>
+</section>
+
+<section id="kontribusi">
+<h2>Kontribusi profesional</h2>
+<p class="sub">Dampak kerja saya di perusahaan sebelumnya.</p>
+<div class="panel">
+<div class="big">Rp11,44<br>miliar</div>
+<p>Total nilai transaksi bisnis yang saya dukung lewat aktivitas pemasaran properti, survei, dan monitoring leads selama <mark>isi periode dan perusahaan</mark>. Angka ini mencerminkan hasil kerja tim, dengan peran saya di <mark>isi peran, misalnya: menjaring dan menindaklanjuti calon pembeli</mark>.</p>
+</div>
+</section>
+
+<section id="dokumentasi">
+<h2>Jejak kerja</h2>
+<p class="sub">Dokumentasi kegiatan bersama klien, rekan kerja, dan di lapangan.</p>
+<div class="gal">
+<div class="ph" data-label="Kegiatan bersama klien" data-src=""></div><div class="ph" data-label="Survei lokasi properti" data-src=""></div><div class="ph" data-label="Rapat tim" data-src=""></div>
+<div class="ph" data-label="Kegiatan marketing" data-src=""></div><div class="ph" data-label="Operasional kost" data-src=""></div><div class="ph" data-label="Dokumentasi lainnya" data-src=""></div>
+</div>
+</section>
+
+<section id="pendidikan">
+<h2>Riwayat pendidikan</h2>
+<ul class="tl">
+<li><h3>S1 Ilmu Hukum</h3><div class="uni"><div class="ph logo" data-label="Logo UT" data-src=""></div><span>Universitas Terbuka</span></div><div class="muted">Lulus 2026 · IPK 3,06</div>
+<div class="card" style="margin-top:16px;max-width:640px"><p class="muted" style="margin-bottom:4px">Tugas akhir (karya ilmiah)</p><h3><mark>Isi judul karya ilmiah</mark></h3><a class="lnk" href="https://repository.ut.ac.id" target="_blank" rel="noopener">Baca di Repositori Universitas Terbuka</a></div></li>
+</ul>
+</section>
+
+<section id="pengalaman">
+<h2>Pengalaman kerja</h2>
+<ul class="tl">
+<li><h3>Marketing Properti</h3><div><mark>Nama perusahaan</mark> · <mark>periode</mark></div><p class="muted">Mengelola pemasaran, memantau leads dan survei, serta menganalisis performa penjualan.</p></li>
+<li><h3>Manajemen Kost</h3><div><mark>Nama usaha</mark> · <mark>periode</mark></div><p class="muted">Mengelola operasional dan menyusun indikator kinerja.</p></li>
+<li><h3>General Affairs</h3><div><mark>Perusahaan konstruksi dan properti</mark> · <mark>periode</mark></div><p class="muted">Mengelola administrasi, purchasing, material, dan koordinasi vendor.</p></li>
+</ul>
+</section>
+
+<section id="sertifikasi">
+<h2>Sertifikasi dan pelatihan</h2>
+<p class="sub">Klik foto sertifikat untuk memperbesar.</p>
+<div class="cols">
+<div class="card"><div class="ph cert" data-label="Sertifikat ABT Jenjang 5" data-src=""></div><h3>Pelatihan Produktivitas ABT Jenjang 5</h3><span class="muted">BBPVP Bandung · November 2026</span></div>
+<div class="card"><div class="ph cert" data-label="Sertifikat Pembudidayaan Jamur" data-src=""></div><h3>Pembudidayaan Jamur</h3><span class="muted">BNSP · 2023</span></div>
+<div class="card"><div class="ph cert" data-label="Sertifikat Smart Farming" data-src=""></div><h3>Smart Farming</h3><span class="muted">BNSP · 2021</span></div>
+<div class="card"><div class="ph cert" data-label="Sertifikat Pemeliharaan Kendaraan" data-src=""></div><h3>Pemeliharaan Berkala Kendaraan Ringan</h3><span class="muted">BNSP · 2020</span></div>
+<div class="card"><div class="ph cert" data-label="Sertifikat English Course" data-src=""></div><h3>English Language Course</h3><span class="muted">Kampung Inggris Pare</span></div>
+</div>
+</section>
+
+<section id="kontak">
+<h2>Hubungi saya</h2>
+<p>Punya peluang, pertanyaan, atau masukan? Pilih cara yang paling nyaman.</p>
+<div class="btns">
+<a class="btn" href="mailto:Wiraameerta81@gmail.com"><svg class="ic"><use href="#i-mail"/></svg>Email</a>
+<a class="btn alt" href="https://wa.me/6287890266688" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg>WhatsApp</a>
+<a class="btn alt" href="https://www.linkedin.com/in/nandawira" target="_blank" rel="noopener"><svg class="ic"><use href="#i-in"/></svg>LinkedIn</a>
+<a class="btn alt" href="https://instagram.com/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-ig"/></svg>Instagram</a>
+</div>
+<h3 style="margin-top:44px">Kirim pesan langsung</h3>
+<form id="f">
+<label>Nama lengkap<input name="n" required autocomplete="name"></label>
+<label>Alamat email Anda<input name="e" type="email" required autocomplete="email"></label>
+<label>Subjek<input name="s" required></label>
+<label>Pesan singkat<textarea name="m" required></textarea></label>
+<button class="btn" type="submit">Kirim pesan</button>
+<p id="note" aria-live="polite"></p>
+</form>
+</section>
+</main>
+<footer>© 2026 Nanda Wiratama, S.H. · Bandung, Jawa Barat</footer>
+<div id="lb" hidden role="dialog" aria-label="Perbesar sertifikat"><img alt=""></div>
+<script>
+document.querySelectorAll('.ph[data-src]').forEach(function(el){var s=el.getAttribute('data-src');if(!s)return;var i=new Image();i.alt=el.getAttribute('data-label')||'';i.onload=function(){el.replaceChildren(i);el.classList.add('has')};i.src=s});
+var lb=document.getElementById('lb');
+document.addEventListener('click',function(e){var t=e.target;if(t.matches&&t.matches('.cert img')){lb.firstChild.src=t.src;lb.hidden=false}else if(!lb.hidden){lb.hidden=true}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.hidden=true});
+var R=document.documentElement;
+try{var p=localStorage.getItem('pal');if(p)R.setAttribute('data-palette',p)}catch(e){}
+document.querySelectorAll('.sw button').forEach(function(b){b.onclick=function(){R.setAttribute('data-palette',b.dataset.p);try{localStorage.setItem('pal',b.dataset.p)}catch(e){}}});
+document.getElementById('f').addEventListener('submit',function(ev){ev.preventDefault();var d=new FormData(ev.target);
+var body='Nama: '+d.get('n')+'\nEmail: '+d.get('e')+'\n\n'+d.get('m');
+location.href='mailto:Wiraameerta81@gmail.com?subject='+encodeURIComponent(d.get('s'))+'&body='+encodeURIComponent(body);
+document.getElementById('note').textContent='Aplikasi email Anda akan terbuka dengan pesan yang sudah terisi. Tekan kirim di sana.'});
+</script>
+</body>
+</html>
